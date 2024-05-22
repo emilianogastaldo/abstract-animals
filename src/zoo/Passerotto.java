@@ -1,7 +1,7 @@
 package zoo;
 
 public class Passerotto extends Animale{
-    private String nome;
+    public String nome;
     Passerotto(String nome){
         this.nome = nome;
     }

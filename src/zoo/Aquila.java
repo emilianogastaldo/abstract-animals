@@ -2,7 +2,7 @@ package zoo;
 
 public class Aquila extends Animale{
 
-    private String nome;
+    public String nome;
 
     Aquila(String nome){
         this.nome = nome;
