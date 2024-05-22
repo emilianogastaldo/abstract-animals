@@ -1,6 +1,6 @@
 package zoo;
 
-public class Aquila extends Animale{
+public class Aquila extends Animale implements Volare{
 
     public String nome;
 
@@ -16,5 +16,10 @@ public class Aquila extends Animale{
     @Override
     public void mangia() {
         System.out.println("Mangio altri animali");
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!!!");
     }
 }

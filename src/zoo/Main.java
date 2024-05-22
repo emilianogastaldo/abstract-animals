@@ -14,11 +14,22 @@ public class Main {
             } else if (zoo[i] instanceof Delfino) {
                 System.out.println("Nome animale: "+ ((Delfino) zoo[i]).nome);
             }
+            if (zoo[i] instanceof Volare) {
+                faiVolare(((Volare) zoo[i]));
+            }if (zoo[i] instanceof Nuotare) {
+                faiNuotare(((Nuotare) zoo[i]));
+            }
 
             zoo[i].dormi();
             zoo[i].mangia();
             zoo[i].verso();
             System.out.println("**********************");
         }
+
+    }
+    public static void faiVolare(Volare animale){
+        animale.vola();
+    }public static void faiNuotare(Nuotare animale){
+        animale.nuota();
     }
 }

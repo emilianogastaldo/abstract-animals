@@ -1,6 +1,6 @@
 package zoo;
 
-public class Passerotto extends Animale{
+public class Passerotto extends Animale implements Volare{
     public String nome;
     Passerotto(String nome){
         this.nome = nome;
@@ -14,5 +14,10 @@ public class Passerotto extends Animale{
     @Override
     public void mangia() {
         System.out.println("Mangio i semi");
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!!!");
     }
 }
