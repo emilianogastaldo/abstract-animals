@@ -1,6 +1,6 @@
 package bonus;
 
-public class PlayStation extends Dispositivo{
+public class PlayStation extends Dispositivo implements DispositivoInterface{
     @Override
     public void play() {
         System.out.println("Sono una playstation e sono in modalità play");
