@@ -6,5 +6,4 @@ public abstract class Animale {
     }
     public abstract void verso();
     public abstract void mangia();
-
 }
